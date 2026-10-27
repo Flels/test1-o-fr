@@ -1,0 +1,18 @@
+.raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.karte {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+  mat-card-actions {
+    margin-top: auto; // Buttons immer unten, auch bei langen Namen
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+}

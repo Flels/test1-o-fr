@@ -1,0 +1,15 @@
+<div>Unsere Produkte</div>
+
+<div class="raster">
+  @for (product of products(); track product.id) {
+    <mat-card appearance="outlined">
+      <mat-card-title>{{product.bezeichnung}}</mat-card-title>
+
+      <mat-card-subtitle>Halo Welt 12354</mat-card-subtitle>
+
+      <a [routerLink]="['/products', product.id]">Details</a>
+
+      <button>Zum Warenkorb hinzufügen</button>
+    </mat-card>
+  }
+</div>
